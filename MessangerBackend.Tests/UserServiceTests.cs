@@ -151,8 +151,7 @@ public class UserServiceTests
         Assert.True(BCrypt.Net.BCrypt.Verify("passwordInTestForRegister", user.Password));
         
     }
-
-
+    
     [Fact]
     public void UserService_GetUsers_ReturnNotEmptyWhenUsersExist()
     {
