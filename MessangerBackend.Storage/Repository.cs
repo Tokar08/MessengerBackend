@@ -12,9 +12,11 @@ public class Repository : IRepository
         _context = context;
     }
 
-    public Task<T> Add<T>(T entity) where T : class
+    public async Task<T> Add<T>(T entity) where T : class
     {
-        throw new NotImplementedException();
+        _context.Set<T>().Add(entity);
+        await _context.SaveChangesAsync();
+        return entity;
     }
 
     public Task<T> Update<T>(T entity) where T : class
@@ -27,14 +29,14 @@ public class Repository : IRepository
         throw new NotImplementedException();
     }
 
-    public Task<T> GetById<T>(int id) where T : class
+    public async Task<T> GetById<T>(int id) where T : class
     {
-        throw new NotImplementedException();
+        return await _context.Set<T>().FindAsync(id);
     }
 
-    public IQueryable GetAll<T>() where T : class
+    public IQueryable<T> GetAll<T>() where T : class
     {
-        throw new NotImplementedException();
+        return _context.Set<T>().AsQueryable();
     }
 
     public async Task<IEnumerable<T>> GetQuery<T>(Expression<Func<T, bool>> func) where T : class

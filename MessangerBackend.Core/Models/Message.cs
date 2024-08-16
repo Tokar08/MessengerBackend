@@ -12,24 +12,22 @@ public class Message
 
 /*
  * id user_id chat_id
- * 
+ *
  */
-
 /*class User_Chat
 {
     public int Id { get; set; }
     public int UserId { get; set; }
     public int ChatId { get; set; }
 }
- 
+
 public class Message
 {
     public int Id { get; set; }
     public User_Chat UserChat { get; set; }
 }*/
-
 /*
  * user_chat: id user_id chat_id
- * message: 
- * 
+ * message:
+ *
  */

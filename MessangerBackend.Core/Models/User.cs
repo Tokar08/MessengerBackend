@@ -8,4 +8,10 @@ public class User
     public DateTime CreatedAt { get; set; }
     public DateTime LastSeenOnline { get; set; }
     public virtual ICollection<Chat> Chats { get; set; }
+    
+
+    public override string ToString()
+    {
+        return Nickname + " " + Password;
+    }
 }

@@ -7,7 +7,6 @@ public class MessangerContext : DbContext
 {
     public MessangerContext(DbContextOptions<MessangerContext> options) : base(options)
     {
-        
     }
 
     /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

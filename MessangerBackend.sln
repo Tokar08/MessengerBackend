@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessangerBackend.Core", "Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessangerBackend.Storage", "MessangerBackend.Storage\MessangerBackend.Storage.csproj", "{2421EB59-B90F-46C4-A3D8-8E985A0F45D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessangerBackend.Tests", "MessangerBackend.Tests\MessangerBackend.Tests.csproj", "{09AB0AE3-2737-40FC-8286-3243983EA743}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{2421EB59-B90F-46C4-A3D8-8E985A0F45D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2421EB59-B90F-46C4-A3D8-8E985A0F45D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2421EB59-B90F-46C4-A3D8-8E985A0F45D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09AB0AE3-2737-40FC-8286-3243983EA743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AB0AE3-2737-40FC-8286-3243983EA743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AB0AE3-2737-40FC-8286-3243983EA743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09AB0AE3-2737-40FC-8286-3243983EA743}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

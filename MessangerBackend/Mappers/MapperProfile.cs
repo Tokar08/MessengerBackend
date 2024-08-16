@@ -10,7 +10,7 @@ public class MapperProfile : Profile
     public MapperProfile()
     {
         CreateMap<User, UserDTO>()
-            /*.ForMember(dest => dest.Nickname, 
+            /*.ForMember(dest => dest.Nickname,
                 opt => opt.MapFrom(
                     src => src.UserName))*/
             .ReverseMap();
