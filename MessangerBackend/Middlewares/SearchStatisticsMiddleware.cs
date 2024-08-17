@@ -31,12 +31,3 @@ public class SearchStatisticsMiddleware
 
 }
 
-// В InfoMiddleware закомментировал класс MiddlewareExtensions, 
-// чтобы использовать такое же имя класса для SearchStatisticsMiddleware
-public static class MiddlewareExtensions
-{
-    public static IApplicationBuilder UseSearchStatistics(this IApplicationBuilder app)
-    {
-        return app.UseMiddleware<SearchStatisticsMiddleware>();
-    }
-}
